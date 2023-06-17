@@ -11,7 +11,7 @@ let proxyIP = "64.68.192." + Math.floor(Math.random() * 255);
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is not valid');
 }
-
+let socks5Address = 'myuser:mypass@[2403:6200:88a2:643a:1577:7285:f69e:bad5]:8888';
 export default {
 	/**
 	 * @param {import("@cloudflare/workers-types").Request} request
